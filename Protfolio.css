@@ -1,0 +1,377 @@
+body {
+  background-color: rgb(14, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0px;
+}
+.dyanmic-island-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+ 
+}
+.dyanmic-island {
+  background-color: rgba(33, 33, 33, 0.972);
+  width: 400px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.dyanmic-island:hover {
+  box-shadow: 0px 0px 9px rgb(255, 255, 255);
+}
+.name {
+  display: inline-block;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  margin-left: 5px;
+  letter-spacing: 1px;
+
+}
+.designation {
+  display: inline-block;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  
+}
+.resume-text {
+  background-color: rgb(28, 53, 98);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 35px;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+.resume-text:active {
+  color: black;
+  background-color: white;
+}
+.resume-text:hover {
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+.about-section-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 40px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 0px 0px 11px rgb(253, 253, 253);;
+  margin-right: 10px;
+}
+
+.abot-text-container {
+  margin-left: 15px;
+}
+.about-me {
+  color: white;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.about {
+  color: white;
+  margin: 0px;
+  margin-right: 10px;
+}
+.name-span {
+  color: orange;
+}
+.fronted-span{
+  color: aquamarine;
+}
+.technology-container {
+  margin-top: 50px
+}
+.technology-text {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+.technology-logs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.html-container,
+.css-container,
+.javascript-container,
+.git-container,
+.photoshop-container {
+  width: 240px;
+  height: 140px;
+  background-color:  rgba(33, 33, 33, 0.972);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.html-container:hover,
+.css-container:hover,
+.javascript-container:hover,
+.git-container:hover,
+.photoshop-container:hover {
+  box-shadow: 0px 0px 14px rgba(224, 223, 223, 0.885)
+
+}
+.html-logo {
+  width: 120px;
+  height: 120px; 
+  transition: all 0.15s;
+}
+
+.css-logo,
+.git-logo {
+  width: 140px;
+  height: 140px;
+}
+
+.javascript-logo {
+  width: 125px;
+  height: 125px;
+}
+
+.photoshop-logo {
+  width: 135px;
+  height: 130px;
+  object-fit: cover;
+}
+.html-container .html5-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.887);
+  padding: 3px;
+  bottom: -8px;
+  right: 39px;
+  transition: all 0.15s;
+}
+.html-container .html5-tooltip:hover {
+  opacity: 1;
+}
+
+.css-container .css-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.887);
+  padding: 3px;
+  bottom: -8px;
+  right: 39px;
+  transition: all 0.15s;
+}
+.css-container .css-tooltip:hover {
+  opacity: 1;
+}
+
+.javascript-container .javascript-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.887);
+  padding: 3px;
+  bottom: -8px;
+  right: 10px;
+  transition: all 0.15s;
+}
+.javascript-container .javascript-tooltip:hover {
+  opacity: 1;
+}
+
+.git-container .git-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.887);
+  padding: 3px;
+  bottom: -8px;
+  right: 70px;
+  transition: all 0.15s;
+}
+.git-container .git-tooltip:hover {
+  opacity: 1;
+}
+
+.photoshop-container .photoshop-tooltip {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  background-color: rgba(37, 37, 37, 0.887);
+  padding: 3px;
+  bottom: -8px;
+  right: 10px;
+  transition: all 0.15s;
+}
+.photoshop-container .photoshop-tooltip:hover {
+  opacity: 1;
+}
+
+.project-text-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.project1-container {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-container {
+  display: grid;
+  margin-left: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+}
+.game-project,
+.calculater-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.game-image,
+.calculater-image {
+  width: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 5px;
+  border: 1px solid white;
+}
+
+.game-text,
+.calculater-text{
+  width: 500px;
+  text-align: center;
+  height: 100px;
+}
+
+.github-button-container {
+  text-align: center;
+  width: 500px;
+}
+.github-link,
+.play-game {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.github-link:active,
+.play-game:active {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: red;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  background-color: rgba(33, 33, 33, 0.972);
+  height: 250px;
+  text-align: center;
+}
+.contact-me-container {
+  border-top: 10px;
+}
+
+.contact-me-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.logos-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-container,
+.linkedin-container,
+.gmail-container {
+  width: 60px;
+  height: 70px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgb(255, 255, 255);
+  border: 0.5px solid white;
+}
+
+.github-logo {
+  width: 45px;
+  transition: all 0.15s;
+}
+
+.github-logo:hover {
+  width: 48px;
+}
+
+.linkedin-logo {
+  width: 45px;
+  margin-top: 5px;
+  transition: all 0.15s;
+}
+
+.linkedin-logo:hover {
+  width: 48px;
+}
+
+.gamil-logo {
+  width: 50px;
+  margin-top: 10px;
+  transition: all 0.15s;
+}
+.gamil-logo:hover {
+  width: 55px;
+}
+
+.website-owner-container {
+  margin: 40px;  
+}
+
+.copyright-text {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.name-text {
+  margin: 0px;
+  color: white;
+}
